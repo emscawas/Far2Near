@@ -5,6 +5,7 @@
 body {
   background: #333448;
   font-family: "Scada", sans-serif;
+  height: 100%;
 }
 
 .wrapper {
@@ -14,50 +15,47 @@ body {
 /* navigation bar part */
 .nav {
   grid-column: 1/4;
-  background: url(./resources/Neck\ Tape\ 2.jpg);
+  background: url(./resources/Neck\ Tape\ 2.jpg) center;
   background-size: contain;
-  height: 5.5vh;
+  min-height: 5.5vh;
+  max-width: 100vw;
   color: white;
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.logo {
-  grid-column: 1;
-  margin-left: 3rem;
-  background: url(./resources/logo.png) no-repeat;
-  background-size: contain;
+.logo > img {
+  max-width: 6vh;
+  min-width: none;
+  margin-left: 2rem;
+}
+ul {
+  margin: auto 0;
 }
 
+li,
 a {
+  display: inline-block;
   color: white;
+  list-style: none;
   text-decoration: none;
+  margin-right: 2rem;
 }
-.shop,
-.explore,
-.about {
-  align-self: center;
-  font-size: 1.7rem;
-}
-
-.shop > a {
-  /* background: white; */
-  /* transform: scaleX(0); */
+.shop {
   display: inline;
   padding: 0.1rem;
   border: 3px solid white;
   transition: 250ms linear;
 }
-.shop > a:hover {
+.shop:hover {
   color: #e96320;
   box-shadow: inset 6.5em 0 0 0 white;
 }
-
-.explore > a {
+.explore {
   position: relative;
 }
-
-.explore > a::before {
+.explore::before {
   content: "";
   position: absolute;
   top: 0;
@@ -66,8 +64,7 @@ a {
   width: 100%;
   transition: 150ms linear;
 }
-
-.explore > a:hover::before {
+.explore:hover::before {
   content: "EXPLORE";
   position: absolute;
   top: 0;
@@ -75,15 +72,13 @@ a {
   height: 100%;
   width: 100%;
 }
-.explore > a:hover {
+.explore:hover {
   color: #e96320;
 }
-
-.about > a {
+.about {
   position: relative;
 }
-
-.about > a::before {
+.about::before {
   content: "";
   position: absolute;
   top: 0;
@@ -92,8 +87,7 @@ a {
   width: 100%;
   transition: 150ms linear;
 }
-
-.about > a:hover::before {
+.about:hover::before {
   content: "ABOUT";
   position: absolute;
   top: 0;
@@ -101,82 +95,18 @@ a {
   height: 100%;
   width: 100%;
 }
-.about > a:hover {
+.about:hover {
   color: #e96320;
 }
 
-/* content part */
-.content {
-  grid-column: 1;
-  /* background: #333448; */
-  color: white;
-  height: 94.5vh;
+@media screen and (max-width: 35rem) {
+  li,
+  a {
+    margin-right: 0.5rem;
+  }
 }
-
-.content > h1:first-child {
-  display: table;
-  margin-left: 4rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  font-size: 3rem;
-  outline: 4px solid #e96320;
-  outline-offset: 0.5rem;
-  letter-spacing: 0.325rem;
-}
-
-.content > .line {
-  /* display: table; */
-  margin-left: 3.25rem;
-  margin-top: 1rem;
-  height: 6px;
-  width: 100%;
-  background: #e96320;
-}
-
-.content > .word {
-  color: #e96320;
-  font-size: 4.7rem;
-  margin-left: 4rem;
-  margin-top: 1rem;
-  -webkit-text-stroke: 2px white;
-}
-
-.content > h2 {
-  margin-top: 1rem;
-  margin-left: 4rem;
-  font-size: 2rem;
-}
-
-.content > a {
-  display: table;
-  margin-top: 2rem;
-  margin-left: 70%;
-  font-size: 2rem;
-  background: #333448;
-  position: relative;
-  z-index: 999;
-}
-.content > a:hover {
-  color: #e96320;
-}
-.content > a::before {
-  content: "SHOP NOW";
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: white;
-  transition: 150ms linear;
-}
-.content > a:hover::before {
-  height: 100%;
-  width: 100%;
-  background: white;
-  color: #e96320;
-}
-/* image part */
-.branding {
-  grid-column: 2/4;
-  background-image: url(./resources/Mens\ Plague.jpg);
-  background-position: center;
-  background-size: cover;
+@media screen and (max-width: 23rem) {
+  ul {
+    display: none;
+  }
 }
