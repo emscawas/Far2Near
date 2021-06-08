@@ -9,17 +9,16 @@ body {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: inline;
 }
 /* navigation bar part */
 .nav {
   grid-column: 1/4;
-  background: url(./resources/Neck\ Tape\ 2.jpg) center;
-  background-size: contain;
+  background: #30336b;
   min-height: 5.5vh;
   max-width: 100vw;
-  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,6 +29,12 @@ body {
   min-width: none;
   margin-left: 2rem;
 }
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/* menu */
 ul {
   margin: auto 0;
 }
@@ -98,6 +103,82 @@ a {
 .about:hover {
   color: #e96320;
 }
+/* menu end */
+
+/* content */
+.content {
+  /* grid-column: 1/2; */
+  position: absolute;
+  z-index: 1;
+  background: #333448;
+  opacity: 0.7;
+}
+.article {
+  /* min-height: 100%; */
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.line {
+  background: #e96320;
+  height: 5px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  display: flex;
+}
+.word {
+  margin-bottom: -1rem;
+  color: #e96320;
+  -webkit-text-stroke: 2px white;
+}
+.brnd {
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  margin-top: 2rem;
+  color: white;
+  outline: 2px solid white;
+  outline-offset: 0.5rem;
+  display: table;
+  font-size: 3rem;
+  text-align: center;
+}
+h2 {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.article > a {
+  padding: 0.1rem;
+  border: 3px solid white;
+  transition: 250ms linear;
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+.article > a:hover {
+  color: #e96320;
+  box-shadow: inset 6.5em 0 0 0 white;
+}
+/* content end */
+
+/* branding image */
+.branding {
+  height: 93.5vh;
+  position: absolute;
+  right: 0;
+}
+.pic {
+  height: 100%;
+  /* border: 2px solid black; */
+}
+.pic > img {
+  /* max-width: 100%; */
+  max-height: 100%;
+  background-size: contain;
+}
 
 @media screen and (max-width: 35rem) {
   li,
@@ -106,6 +187,13 @@ a {
   }
 }
 @media screen and (max-width: 23rem) {
+  ul {
+    /* display: none; */
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 20rem) {
   ul {
     display: none;
   }
