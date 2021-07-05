@@ -4,3 +4,125 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #1a1927;
+  font-family: "Aladin", cursive;
+}
+
+header {
+  background: #0a0913;
+  padding: 1em 0;
+}
+
+section {
+  color: #fff;
+}
+
+footer {
+  background: #0a0913;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1200px;
+  /* border: 2px solid red; */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+/* nav menu start */
+.logo {
+  height: 50px;
+  /* changing soon */
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  /* border: 2px solid red; */
+}
+
+/* nav menu end */
+
+/* section 1st & 2nd start */
+
+.section__brand {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clothing--name {
+  color: #e06017;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.clothing--image {
+  margin-bottom: 1.5em;
+}
+
+.clothing--desc {
+  margin-bottom: 1.2em;
+}
+
+/* section 1st & 2nd end */
+
+/* last section start */
+
+.clothing--view {
+  margin-bottom: -1.5em;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.cvback {
+  text-align: center;
+}
+
+.cvfront {
+  text-align: center;
+}
+
+.left {
+  /* border: 2px solid red; */
+  width: 50%;
+}
+
+.right {
+  /* border: 2px solid yellow; */
+  width: 50%;
+  margin-bottom: 2em;
+}
+
+/* last section end */
+
+/* footer start */
+
+.footer__brand {
+  color: #e06017;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.clothing__link {
+  color: #fff;
+  font-size: 1.125rem;
+}
+.clothing__link a {
+  color: #fff;
+  text-decoration: none;
+}
