@@ -2,6 +2,8 @@
 
 https://emscawas.github.io/Far2Near/
 
+git push origin master
+
 Personal project by Emmanuel Steve P. Cawas
 
 
