@@ -143,7 +143,7 @@ footer {
 }
 
 .aboutus--logo {
-  width: 75%;
+  /* width: 100%; */
   margin: 0 auto;
 }
 
@@ -154,3 +154,19 @@ footer {
 }
 
 /* ABOUT US PAGE END */
+
+/* CONTACT US PAGE */
+
+.contactus {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+}
+
+.contact--info {
+  margin-bottom: 1em;
+}
+
+.contact--link {
+  color: #fff;
+}
