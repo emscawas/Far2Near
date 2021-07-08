@@ -12,6 +12,9 @@ img {
 body {
   background: #1a1927;
   font-family: "Aladin", cursive;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -25,6 +28,8 @@ section {
 
 footer {
   background: #0a0913;
+  margin-top: auto;
+  padding: 1em 0;
 }
 
 .container {
@@ -126,3 +131,26 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
+/* footer end */
+
+/* ABOUT US PAGE */
+
+.aboutus {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.aboutus--logo {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.aboutus--brand {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+/* ABOUT US PAGE END */
