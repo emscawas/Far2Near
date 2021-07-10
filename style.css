@@ -9,6 +9,10 @@ img {
   max-width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #1a1927;
   font-family: "Aladin", cursive;
@@ -45,12 +49,6 @@ footer {
   justify-content: space-between;
 }
 /* nav menu start */
-.logo {
-  height: 50px;
-  /* changing soon */
-  text-decoration: none;
-  color: #fff;
-}
 
 .navbar {
   display: flex;
@@ -141,6 +139,7 @@ footer {
 /* last section start */
 
 .clothing--view {
+  padding-bottom: 2em;
   margin-bottom: -1.5em;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -164,7 +163,6 @@ footer {
 .right {
   /* border: 2px solid yellow; */
   width: 50%;
-  margin-bottom: 2em;
 }
 
 /* last section end */
@@ -196,9 +194,9 @@ footer {
   margin-bottom: 1em;
 }
 
-.aboutus--logo {
+.aboutus--banner {
   /* width: 100%; */
-  margin: 0 auto;
+  margin-bottom: 1.5em;
 }
 
 .aboutus--brand {
@@ -280,5 +278,15 @@ footer {
     width: 50%;
     display: flex;
     justify-content: space-between;
+  }
+
+  .contact--left {
+    width: 50%;
+    /* border: 2px solid red; */
+  }
+
+  .contact--right {
+    width: 50%;
+    /* border: 2px solid yellow; */
   }
 }
