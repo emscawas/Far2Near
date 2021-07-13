@@ -195,21 +195,10 @@ footer {
   margin-bottom: 1em;
 }
 
-.aboutus--banner {
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 1.5em;
-}
-
 .aboutus--brand {
   text-align: center;
   font-weight: 100;
   margin-bottom: 1em;
-}
-
-.aboutus--content {
-  margin: 0 auto;
-  width: 80%;
 }
 
 /* ABOUT US PAGE END */
@@ -292,6 +281,17 @@ footer {
     width: 50%;
     display: flex;
     justify-content: space-between;
+  }
+
+  .aboutus--banner {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1.5em;
+  }
+
+  .aboutus--content {
+    margin: 0 auto;
+    width: 80%;
   }
 
   .contact--left {
