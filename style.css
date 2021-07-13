@@ -280,6 +280,13 @@ footer {
     margin-bottom: 1.125em;
   }
 
+  .section__plague--men,
+  .section__plague--women,
+  .section__keys--men,
+  .section__keys--women {
+    width: 50%;
+  }
+
   .left--items,
   .right--items {
     width: 50%;
