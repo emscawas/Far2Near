@@ -23,3 +23,4 @@ Personal project by Emmanuel Steve P. Cawas
          
 07142021 - Mock-up and icons organized in folder.
          - Footer content added.
+         - Icons fixed.
