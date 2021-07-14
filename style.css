@@ -32,9 +32,13 @@ section {
 }
 
 footer {
+  color: #fff;
   background: #0a0913;
   margin-top: auto;
   padding: 1em 0;
+}
+.footer--row {
+  display: flex;
 }
 
 .container {
@@ -48,6 +52,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.my--mail {
+  color: #fff;
 }
 /* nav menu start */
 
@@ -174,6 +182,8 @@ footer {
   color: #e06017;
   text-transform: uppercase;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .clothing__link {
@@ -185,6 +195,22 @@ footer {
   text-decoration: none;
 }
 
+.footer--icon {
+  height: 40px;
+}
+
+.footer--left,
+.footer--right {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.footer--left {
+  line-height: 1.2;
+}
+.footer--right {
+  text-align: right;
+}
 /* footer end */
 
 /* ABOUT US PAGE */
