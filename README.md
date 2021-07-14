@@ -22,3 +22,4 @@ Personal project by Emmanuel Steve P. Cawas
          - About us content finish and shopee link added.
          
 07142021 - Mock-up and icons organized in folder.
+         - Footer content added.
