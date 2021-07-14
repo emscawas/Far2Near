@@ -186,17 +186,11 @@ footer {
   justify-content: center;
 }
 
-.clothing__link {
-  color: #fff;
-  font-size: 1.125rem;
-}
-.clothing__link a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .footer--icon {
   height: 40px;
+}
+.footer--link {
+  text-decoration: none;
 }
 
 .footer--left,
@@ -243,6 +237,7 @@ footer {
 
 .contact--link {
   color: #fff;
+  text-decoration: none;
 }
 
 /* Media Queries */
