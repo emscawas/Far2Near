@@ -20,3 +20,5 @@ Personal project by Emmanuel Steve P. Cawas
 07132021 - Fixed scroll issue on about page.
          - The plague and The keys description added.
          - About us content finish and shopee link added.
+         
+07142021 - Mock-up and icons organized in folder.
