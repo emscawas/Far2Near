@@ -14,7 +14,9 @@ html {
 }
 
 body {
-  background: #1a1927;
+  /* background: #1a1927; */
+  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   font-family: "Aladin", cursive;
   display: flex;
   flex-direction: column;
@@ -23,7 +25,8 @@ body {
 }
 
 header {
-  background: #0a0913;
+  /* background: #0a0913; */
+  background-image: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
   padding: 1em 0;
 }
 
@@ -33,7 +36,8 @@ section {
 
 footer {
   color: #fff;
-  background: #0a0913;
+  /* background: #0a0913; */
+  background-image: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
   margin-top: auto;
   padding: 1em 0;
 }
